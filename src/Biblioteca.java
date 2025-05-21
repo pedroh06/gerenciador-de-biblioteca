@@ -24,17 +24,4 @@ public class Biblioteca {
             }
         }
     }
-
-    public int contarItensPorTipo(String tipo) {
-        if(index == 0) {
-            index = aux;
-            return tipoDeItens;
-        }
-        if (biblioteca[index - 1].getTipoItem().equals(tipo)) {
-            tipoDeItens++;
-        }
-
-        index--;
-        return contarItensPorTipo(tipo);
-    }
 }

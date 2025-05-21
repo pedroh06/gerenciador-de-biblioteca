@@ -12,8 +12,5 @@ public class App {
 
         System.out.println("Itens do tipo 'Livro':");
         biblioteca.buscarItensPorTipo("Livro");
-
-        int quantLivros = biblioteca.contarItensPorTipo("Livro");
-        System.out.println("Número de Livros cadastrados: " + quantLivros);
     }
 }
