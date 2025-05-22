@@ -24,4 +24,19 @@ public class Biblioteca {
             }
         }
     }
+
+    public boolean removerItem(String titulo) {
+        for (int i = 0; i < index; i++) {
+            if (biblioteca[i] != null && biblioteca[i].getTitulo().equalsIgnoreCase(titulo)) {
+                for (int j = i; j < index - 1; j++) {
+                    biblioteca[j] = biblioteca[j + 1];
+                }
+                biblioteca[index - 1] = null;
+                index--;
+                aux--;
+                return true;
+            }
+        }
+        return false;
+    }
 }
