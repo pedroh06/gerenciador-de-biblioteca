@@ -11,18 +11,10 @@ public class Biblioteca {
     }
 
     public void listaItens() {
-        for(int i = 0; i <= index -1; i++) {
+        for(int i = 0; i < index; i++) {
             biblioteca[i].exibirDetalhes();
             System.out.println("-----------------------------------------------");
         }    
-    }
-
-    public void buscarItensPorTipo(String tipo) {
-        for (ItemBiblioteca biblio : biblioteca) {
-            if (biblio != null && biblio.getTipoItem().equals(tipo)) {
-                biblio.exibirDetalhes();
-            }
-        }
     }
 
     public boolean removerItem(String titulo) {

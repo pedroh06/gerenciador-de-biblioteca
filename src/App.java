@@ -50,7 +50,7 @@ public class App {
         String titulo = scanner.nextLine();
         System.out.print("Ano de Publicação: ");
         int ano = scanner.nextInt();
-        scanner.nextLine(); // Limpar o buffer
+        scanner.nextLine();
         System.out.print("Autor: ");
         String autor = scanner.nextLine();
         System.out.print("Gênero: ");
@@ -67,12 +67,12 @@ public class App {
         String titulo = scanner.nextLine();
         System.out.print("Ano de Publicação: ");
         int ano = scanner.nextInt();
-        scanner.nextLine(); // Limpar o buffer
+        scanner.nextLine();
         System.out.print("Edição: ");
         int edicao = scanner.nextInt();
         System.out.print("Peridiocidade (1=mensal, 2=bimestral, 3=trimestral, 6=semestral, 12=anual): ");
         int peridiocidade = scanner.nextInt();
-        scanner.nextLine(); // Limpar o buffer
+        scanner.nextLine();
 
         Revista revista = new Revista(titulo, ano, "Revista", edicao, peridiocidade);
         biblioteca.adicionar(revista);
